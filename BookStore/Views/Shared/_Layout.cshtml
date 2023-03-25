@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        a{
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/Book/Add">  Book Store</a>
+        <ul class=" navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/Genre/GetAll">Genres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Author/GetAll">Authors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Publisher/GetAll">Publishers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Book/GetAll">Books</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container"
+        @RenderBody()
+</body>
+</html>
